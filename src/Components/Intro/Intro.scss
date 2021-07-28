@@ -1,0 +1,40 @@
+.intro {
+    display: flex;
+    background-image: url("https://wallpaperaccess.com/full/1183596.jpg");
+
+    .leftIntro {
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        .text {
+            text-align: right;
+            color: #3e474f;
+        }
+    }
+
+    .rightIntro {
+        flex: 0.5;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+
+        .rightContent {
+            text-align: center;
+            position: absolute;
+            .downBtn{
+                font-size: 70px;
+            }
+            a:visited {
+                color: #3e474f;
+            }
+            a:hover {
+                color: white;
+            }
+        }
+
+    }
+}

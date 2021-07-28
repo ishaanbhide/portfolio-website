@@ -1,0 +1,118 @@
+@import "../../global.scss";
+
+.skills {
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+        .rightSkills {
+            display: none;
+        }
+        .leftSkills {
+            flex: 100%;
+        }
+    }
+}
+
+.leftSkills {
+    text-align: center;
+    color: white;
+    flex: 0.5;
+    background-color: #3e474f;
+}
+
+.goDown {
+    padding-top: 50px;
+    .downIcon {
+        font-size: 60px;
+    }
+    a:visited {
+        color: white;
+    }
+    a:hover {
+        color: grey;
+    }
+}
+
+.about {
+    h1 {
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .cvLink {
+        display: flex;
+        padding-top: 40px;
+        
+        p {
+            margin-right: 5px;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            color: pink;
+        }
+    }
+
+    padding: 20px 60px;
+    text-align: left;
+}
+
+.rightSkills {
+    padding-top: 50px;
+    flex: 0.5;
+    background-color: #e6e6e6;
+
+    .profileImage {
+        display: flex;
+        justify-content: center;
+        img {
+            height: 450px;
+            width: 450px;
+            border-radius: 100%
+        }
+    }
+
+    .socialIcons {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+
+        a:visited {
+            color: #3e474f;
+        }
+
+        a:hover {
+            color: grey;
+        }
+    }
+}
+
+.logos {
+    ul > li > img {
+        height: 50px;
+        width: 50px;
+        background-color: #f0f0f0;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    ul {
+        text-align: left;
+    }
+    ul > li {
+        padding: 20px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    ul > li > img:hover {
+        background-color: #88abb3;
+    }
+    p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
