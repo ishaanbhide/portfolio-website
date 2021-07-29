@@ -26,14 +26,14 @@
     .downIcon {
         font-size: 60px;
     }
+    a:link {
+        color: white;
+    }
     a:visited {
         color: white;
     }
     a:hover {
         color: grey;
-    }
-    a:link {
-        color: white;
     }
 }
 
@@ -52,15 +52,16 @@
             margin-right: 5px;
         }
 
+        a:link {
+            color: white;
+        }
+
         a:visited {
             color: white;
         }
 
         a:hover {
             color: pink;
-        }
-        a:link {
-            color: white;
         }
     }
 
