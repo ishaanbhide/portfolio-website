@@ -14,7 +14,7 @@ export default function Skills() {
                 <div className="about">
                     <h1>About Me</h1>
                     <p>
-                    Hardworking, organised, and friendly, I am a full-time second year Bachelor of 
+                    I am a full-time second year Bachelor of 
                     Software Engineering (Honours) student at The University of Auckland. I love to 
                     tackle challenges and strive for creativity and perfection in every task I come 
                     across. Through past experiences in leadership roles, I have become a confident 
