@@ -22,7 +22,7 @@
 }
 
 .goDown {
-    padding-top: 50px;
+    padding-top: 100px;
     .downIcon {
         font-size: 60px;
     }
@@ -47,9 +47,13 @@
     .cvLink {
         display: flex;
         padding-top: 40px;
-        
+
         p {
             margin-right: 5px;
+        }
+
+        a {
+            transition: 0.3s;
         }
 
         a:link {
@@ -88,11 +92,19 @@
         display: flex;
         justify-content: center;
         padding-top: 30px;
+        padding-left: 10px;
+
+        .linkedin {
+            transition: 0.3s;
+        }
+
+        .github {
+            transition: 0.3s;
+        }
 
         a:visited {
             color: #3e474f;
         }
-
         a:hover {
             color: grey;
         }

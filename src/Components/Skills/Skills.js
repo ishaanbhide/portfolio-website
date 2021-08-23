@@ -4,6 +4,7 @@ import CV from "./CV.pdf"
 import profilePic from "./profilepic.jpg"
 import LinkIcon from '@material-ui/icons/Link';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 export default function Skills() {
@@ -69,6 +70,7 @@ export default function Skills() {
                 </div>
                 <div className="socialIcons">
                     <a href="https://www.linkedin.com/in/ishaan-bhide-022a23201/"><LinkedInIcon className="linkedin" fontSize="large"/></a>
+                    <a href="https://github.com/ishaanbhide"><GitHubIcon className="github" fontSize="large"/></a>
                 </div>
             </div>
         </div>
