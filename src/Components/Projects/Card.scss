@@ -25,6 +25,10 @@
         position: absolute;
         z-index: 2;
         opacity: 0%;
+
+        p {
+            font-size: 15px;
+        }
     }
 }
 
@@ -34,6 +38,9 @@
     }
 
     .text-block {
+        margin: 20px;
+        position: absolute;
+        z-index: 2;
         opacity: 100%;
         color: white;
 
