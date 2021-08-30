@@ -2,7 +2,7 @@
 
 .card-contents {
     width: 300px;
-    height: 450px;
+    height: 415px;
     border-radius: 20px;
     border: 2px solid rgb(240, 239, 239);
     margin: 10px 20px;
@@ -23,5 +23,9 @@
     .text-block {
         padding: 20px;
         color: black;
+
+        p {
+            font-size: 15px;
+        }
     }
 }

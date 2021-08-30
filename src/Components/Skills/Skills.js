@@ -29,10 +29,9 @@ export default function Skills() {
                         <a href={CV}><LinkIcon /></a>
                     </div>
                 </div>
-                
-                <h1>Skills</h1>
 
                 <div className="logos">
+                    <h1>Skills</h1>
                     <ul>
                         <li>
                             <img src="https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png" alt=""/>

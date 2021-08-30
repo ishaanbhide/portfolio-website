@@ -1,6 +1,13 @@
+@import "../../global.scss";
+
 .intro {
     display: flex;
     background-image: url("https://wallpaperaccess.com/full/1183596.jpg");
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .leftIntro {
         flex: 0.5;

@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .projects {
     display: flex;
     flex-direction: column;
@@ -5,14 +7,41 @@
     background-color: white;
 
     h1 {
+        @include mobile {
+            font-size: 30px;
+        }
+        
         font-size: 40px;
         padding-top: 30px;
         padding-bottom: 20px;
     }
 
+    .cards {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:link {
+            color: black;
+        }
+        a:hover {
+            color: black;
+        }
+        a:visited {
+            color: black;
+        }
+    }
+
     .goDown {
-        padding-top: 50px;
+        padding-top: 30px;
         .downIcon {
+            transition: 0.3s;
             font-size: 60px;
         }
         a:link {
@@ -27,24 +56,3 @@
     }
 }
 
-.cards {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    a {
-        color: black;
-        text-decoration: none;
-    }
-    a:link {
-        color: black;
-    }
-    a:hover {
-        color: black;
-    }
-    a:visited {
-        color: black;
-    }
-}

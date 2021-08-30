@@ -3,135 +3,167 @@
 .skills {
     display: flex;
 
-    @include mobile {
-        flex-direction: column;
-        .rightSkills {
+    .leftSkills {
+        @include mobile {
+            flex: 1;
+        }
+
+        color: white;
+        background-color: #3e474f;
+        flex: 0.5;
+
+        .about {
+            margin-left: 40px;
+            margin-right: 40px;
+
+            h1 {
+                @include mobile {
+                    font-size: 20px;
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                }
+
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 20px;
+            }
+
+            .cvLink {
+                display: flex;
+                padding-top: 20px;
+
+                a {
+                    transition: 0.3s;
+                }
+        
+                a:link {
+                    color: white;
+                }
+        
+                a:visited {
+                    color: white;
+                }
+        
+                a:hover {
+                    color: pink;
+                }
+            }
+        }
+    
+        .logos {
+            h1 {
+                @include mobile {
+                    font-size: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 20px;
+            }
+
+            ul > li > img {
+                @include mobile {
+                    height: 25px;
+                    width: 25px;
+                    padding: 5px;
+                }
+
+                height: 50px;
+                width: 50px;
+                background-color: #f0f0f0;
+                margin-top: 10px;
+                padding: 10px;
+            }
+
+            ul {
+                text-align: left;
+            }
+
+            ul > li {
+                @include mobile {
+                    padding: 10px;
+                }
+
+                text-align: center;
+                padding: 20px;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            ul > li > img:hover {
+                background-color: #88abb3;
+            }
+
+            ul > li > p {
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    
+        .goDown {
+            padding-top: 30px;
+            text-align: center;
+
+            .downIcon {
+                font-size: 60px;
+                transition: 0.3s;
+            }
+            a:link {
+                color: white;
+            }
+            a:visited {
+                color: white;
+            }
+            a:hover {
+                color: grey;
+            }
+        }
+    }
+    
+    
+    .rightSkills {
+        @include mobile {
             display: none;
         }
-        .leftSkills {
-            flex: 100%;
-        }
-    }
-}
 
-.leftSkills {
-    text-align: center;
-    color: white;
-    flex: 0.5;
-    background-color: #3e474f;
-}
-
-.goDown {
-    padding-top: 100px;
-    .downIcon {
-        font-size: 60px;
-    }
-    a:link {
-        color: white;
-    }
-    a:visited {
-        color: white;
-    }
-    a:hover {
-        color: grey;
-    }
-}
-
-.about {
-    h1 {
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
-
-    .cvLink {
-        display: flex;
-        padding-top: 40px;
-
-        p {
-            margin-right: 5px;
+        padding-top: 50px;
+        flex: 0.5;
+        background-color: #e6e6e6;
+    
+        .profileImage {
+            display: flex;
+            justify-content: center;
+            
+            img {
+                height: 450px;
+                width: 450px;
+                border-radius: 100%
+            }
         }
 
-        a {
-            transition: 0.3s;
-        }
-
-        a:link {
-            color: white;
-        }
-
-        a:visited {
-            color: white;
-        }
-
-        a:hover {
-            color: pink;
-        }
-    }
-
-    padding: 20px 60px;
-    text-align: left;
-}
-
-.rightSkills {
-    padding-top: 50px;
-    flex: 0.5;
-    background-color: #e6e6e6;
-
-    .profileImage {
-        display: flex;
-        justify-content: center;
-        img {
-            height: 450px;
-            width: 450px;
-            border-radius: 100%
-        }
-    }
-
-    .socialIcons {
-        display: flex;
-        justify-content: center;
-        padding-top: 30px;
-        padding-left: 10px;
-
-        .linkedin {
-            transition: 0.3s;
-        }
-
-        .github {
-            transition: 0.3s;
-        }
-
-        a:visited {
-            color: #3e474f;
-        }
-        a:hover {
-            color: grey;
-        }
-    }
-}
-
-.logos {
-    ul > li > img {
-        height: 50px;
-        width: 50px;
-        background-color: #f0f0f0;
-        margin-top: 10px;
-        padding: 10px;
-    }
-    ul {
-        text-align: left;
-    }
-    ul > li {
-        padding: 20px;
-        display: inline-block;
-        vertical-align: top;
-    }
-    ul > li > img:hover {
-        background-color: #88abb3;
-    }
-    p {
-        font-size: 12px;
-        text-align: center;
+        .socialIcons {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+    
+            .linkedin {
+                transition: 0.3s;
+                padding-right: 10px;
+            }
+    
+            .github {
+                transition: 0.3s;
+            }
+    
+            a:visited {
+                color: #3e474f;
+            }
+            
+            a:hover {
+                color: grey;
+            }
+        }    
     }
 }
