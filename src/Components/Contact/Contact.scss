@@ -22,9 +22,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     h2 {
+      padding-top: 30px;
       font-size: 30px;
     }
 
@@ -38,7 +38,7 @@
 
       input {
         @include mobile {
-          width: 250px;
+          width: 200px;
         }
 
         width: 300px;
@@ -48,7 +48,7 @@
 
       textarea {
         @include mobile {
-          width: 250px;
+          width: 200px;
         }
         
         width: 300px;
@@ -73,6 +73,15 @@
 
       span {
         color: green;
+      }
+    }
+
+    .details {
+      display: flex;
+      align-items: center;
+      
+      span {
+        padding: 8px;
       }
     }
   }
