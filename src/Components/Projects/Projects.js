@@ -15,7 +15,6 @@ export default function Projects() {
 
                 <Card 
                 title="Spelling Game"
-                link="https://github.com/ishaanbhide/spelling-game"
                 image={spelling_game}
                 text="Quiz application that tests users on different spelling words. Spelling words are 
                 spoken by the computer using Linux commands. The game saves all statistics and
@@ -25,7 +24,6 @@ export default function Projects() {
 
                 <Card
                 title="Todo List"
-                link="https://github.com/ishaanbhide/todo-list"
                 image={todo_list}
                 text="Simple To Do list that supports adding and deleting new list items"
                 tech="Made using React, JavaScript, HTML, CSS"
@@ -33,7 +31,6 @@ export default function Projects() {
 
                 <Card 
                 title="Recipe Search App"
-                link="https://github.com/ishaanbhide/recipe-search"
                 image={recipe_search}
                 text="Web app that uses Edamam Recipe API to load recipes into the web app."
                 tech="Made using React, JavaScript, HTML, CSS"
