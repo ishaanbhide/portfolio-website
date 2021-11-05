@@ -1,16 +1,19 @@
 @import "../../global.scss";
 
 .intro {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-image: url("https://wallpaperaccess.com/full/1183596.jpg");
 
     @include mobile{
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        min-height: 600px;
+        gap: 100px;
+        justify-content: center;
     }
 
     .leftIntro {
-        flex: 0.5;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,7 +26,6 @@
     }
 
     .rightIntro {
-        flex: 0.5;
         display: flex;
         flex-direction:column;
         align-items: center;

@@ -2,35 +2,41 @@
 
 .contact {
   background-color: white;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
 
   @include mobile {
+    display: flex;
     flex-direction: column;
+
     .leftContact {
         display: none;
+    }
+
+    .rightContact {
+      gap: 20px;
+
+      h1 {
+        padding-top: 20px;
+      }
     }
 }
 
   .leftContact {
-    flex: 0.5;
     overflow: hidden;
     background-color: grey;
   }
 
   .rightContact {
-    flex: 0.5;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    h2 {
-      padding-top: 30px;
-      font-size: 30px;
-    }
+    justify-content: center;
+    background-color: #d1d1d1;
 
     form {
       width: 70%;
-      height: 70%;
+      height: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;

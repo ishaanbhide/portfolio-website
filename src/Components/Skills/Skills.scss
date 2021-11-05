@@ -1,109 +1,86 @@
 @import "../../global.scss";
 
 .skills {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
 
-    .leftSkills {
-        @include mobile {
-            flex: 1;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+
+        .rightSkills {
+            display: none;
         }
 
+        .leftSkills > .about > h1 {
+            padding-top: 20px;
+        }
+
+        .leftSkills > .goDown {
+            padding-bottom: 20px;
+        }
+    }
+
+    .leftSkills {
         color: white;
         background-color: #3e474f;
-        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
 
         .about {
-            margin-left: 40px;
-            margin-right: 40px;
-
             h1 {
-                @include mobile {
-                    font-size: 20px;
-                    padding-top: 20px;
-                    padding-bottom: 10px;
-                }
-
                 text-align: center;
-                padding-top: 40px;
-                padding-bottom: 20px;
+            }
+
+            p {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
             }
 
             .cvLink {
-                display: flex;
+                padding-left: 20px;
                 padding-top: 20px;
 
-                a {
-                    transition: 0.3s;
-                }
-        
-                a:link {
-                    color: white;
-                }
-        
-                a:visited {
-                    color: white;
-                }
-        
-                a:hover {
-                    color: pink;
+                button {
+                    padding: 5px;
                 }
             }
         }
     
-        .logos {
+        .skills-section {
             h1 {
-                @include mobile {
-                    font-size: 20px;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                }
-
                 text-align: center;
-                padding-top: 40px;
-                padding-bottom: 20px;
             }
 
-            ul > li > img {
-                @include mobile {
-                    height: 25px;
-                    width: 25px;
-                    padding: 5px;
+            .logos {
+                padding-top: 20px;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: center;
+                gap: 4rem;
+                row-gap: 2rem;
+
+                .logo-and-text {
+                    text-align: center;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        background-color: white;
+                        padding: 10px;
+                    }
+
+                    img:hover {
+                        filter: brightness(50%);
+                    }
                 }
-
-                height: 50px;
-                width: 50px;
-                background-color: #f0f0f0;
-                margin-top: 10px;
-                padding: 10px;
-            }
-
-            ul {
-                text-align: left;
-            }
-
-            ul > li {
-                @include mobile {
-                    padding: 10px;
-                }
-
-                text-align: center;
-                padding: 20px;
-                display: inline-block;
-                vertical-align: top;
-            }
-
-            ul > li > img:hover {
-                background-color: #88abb3;
-            }
-
-            ul > li > p {
-                font-size: 12px;
-                text-align: center;
             }
         }
     
         .goDown {
-            padding-top: 30px;
             text-align: center;
 
             .downIcon {
@@ -128,14 +105,15 @@
             display: none;
         }
 
-        padding-top: 50px;
-        flex: 0.5;
-        background-color: #e6e6e6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: #d1d1d1;
+
     
         .profileImage {
-            display: flex;
-            justify-content: center;
-            
             img {
                 height: 450px;
                 width: 450px;
@@ -145,8 +123,6 @@
 
         .socialIcons {
             display: flex;
-            justify-content: center;
-            padding-top: 20px;
     
             .linkedin {
                 transition: 0.3s;

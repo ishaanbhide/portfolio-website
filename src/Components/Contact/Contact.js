@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Contact.scss";
 import emailjs from "emailjs-com";
-import { Person, Mail } from "@material-ui/icons";
+import { Mail } from "@material-ui/icons";
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
@@ -25,7 +25,7 @@ export default function Contact() {
         <img src="https://storage.googleapis.com/nextivawebsites-wordpressfiles-voip/var/www/virtual/nextiva.com/voip/2019/05/business-communication-feature-image-1.png" alt="" />
       </div>
       <div className="rightContact">
-        <h2>Contact</h2>
+        <h1>Contact</h1>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Email" name="email"/>
           <textarea placeholder="Message" name="message"></textarea>
@@ -34,15 +34,9 @@ export default function Contact() {
         </form>
 
         <div className="details">
-          <Person className="icon" />
-          <span>+64 210 848 8831</span>
-        </div>
-
-        <div className="details">
           <Mail className="icon" />
           <span>ishbhi007@gmail.com</span>
         </div>
-
       </div>
     </div>
   );

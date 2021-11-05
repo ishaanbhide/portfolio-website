@@ -12,34 +12,7 @@
 
   .wrapper {
     padding: 20px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .left {
-      display: flex;
-      align-items: center;
-
-      .itemContainer {
-        @include mobile {
-          display: none;
-        }
-
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
-
-        .icon {
-          font-size: 18px;
-          margin-right: 5px;
-        }
-
-        span {
-          font-size: 15px;
-          font-weight: 500;
-        }
-      }
-    }
+    float: right;
 
     .right {
       .hamburger {

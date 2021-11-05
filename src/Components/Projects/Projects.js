@@ -10,30 +10,33 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 export default function Projects() {
     return (
         <div className="projects" id="projects">
-            <h1>Projects</h1>
+            <div className="projects-title">
+                <h1>Projects</h1>
+            </div>
+            
             <div className="cards">
-
                 <Card 
                 title="Spelling Game"
                 image={spelling_game}
-                text="Quiz application that tests users on different spelling words. Spelling words are 
-                spoken by the computer using Linux commands. The game saves all statistics and
-                includes reviewing incorrect answers."
-                tech="Made using JavaFX, Java, CSS, Bash shell script"
+                text="Quiz application that tests users on the spelling of Māori words. Words are
+                spoken by the computer using Linux commands. Game allows users to
+                choose different topics, input macron letters, slow down/speed up speech
+                synthesis, show hints, and skip words."
+                tech="JavaFX, Java, CSS, Bash shell script"
                 />
 
                 <Card
                 title="Todo List"
                 image={todo_list}
                 text="Simple To Do list that supports adding and deleting new list items"
-                tech="Made using React, JavaScript, HTML, CSS"
+                tech="React, JavaScript, HTML, CSS"
                 />
 
                 <Card 
                 title="Recipe Search App"
                 image={recipe_search}
                 text="Web app that uses Edamam Recipe API to load recipes into the web app."
-                tech="Made using React, JavaScript, HTML, CSS"
+                tech="React, JavaScript, HTML, CSS"
                 />
 
                 <Card 
@@ -42,7 +45,7 @@ export default function Projects() {
                 text="Web app that looks identical to Facebook. User registration using google 
                 authentication and information saved using Firebase. Web app supports posting 
                 text and images."
-                tech="Made using React, JavaScript, HTML, CSS"
+                tech="React, JavaScript, HTML, CSS"
                 />
             </div>
             
