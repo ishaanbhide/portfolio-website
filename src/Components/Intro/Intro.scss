@@ -26,6 +26,11 @@
     }
 
     .rightIntro {
+
+        @include mobile{
+            display: none;
+        }
+
         display: flex;
         flex-direction:column;
         align-items: center;
