@@ -1,0 +1,36 @@
+.footer {
+    background-color: #3e474f;
+    min-height: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftIcons {
+
+    .linkedin {
+        transition: 0.3s;
+        padding-right: 10px;
+    }
+
+    .github {
+        transition: 0.3s;
+    }
+
+    a:link {
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
+    a:hover {
+        color: grey;
+    }
+}
+
+.rightText {
+    text-align: right;
+    color: white;
+}

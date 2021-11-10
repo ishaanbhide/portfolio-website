@@ -1,11 +1,14 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: white;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
   display: grid;
   grid-template-columns: 50% 50%;
 
   @include mobile {
+    height: auto;
     display: flex;
     flex-direction: column;
 
@@ -16,6 +19,14 @@
     .rightContact {
       gap: 20px;
       padding-bottom: 40px;
+
+      form > input {
+        width: 200px;
+      }
+
+      form > textarea {
+        width: 200px;
+      }
 
       h1 {
         padding-top: 20px;
