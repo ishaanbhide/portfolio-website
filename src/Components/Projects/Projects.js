@@ -4,7 +4,7 @@ import Card from './Card'
 import facebook_clone from "./facebook-clone.jpg"
 import spelling_game from "./spelling-game.jpg"
 import recipe_search from "./recipe-search.jpg"
-import todo_list from "./todo-list.jpg"
+import memo from "./memo.jpg"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 export default function Projects() {
@@ -22,15 +22,17 @@ export default function Projects() {
                 spoken by the computer using Linux commands. Game allows users to
                 choose different topics, input macron letters, slow down/speed up speech
                 synthesis, show hints, and skip words."
-                tech="JavaFX, Java, CSS, Bash shell script"
+                tech="JavaFX, CSS, Bash shell script"
                 />
 
-                <Card
-                title="Todo List"
-                image={todo_list}
-                text="Simple To Do list that supports adding and deleting new list items"
-                tech="React, JavaScript, HTML, CSS"
-                />
+                <a href="https://github.com/ishaanbhide/memo"><Card
+                title="Memo"
+                image={memo}
+                text="Advanced note application that uses Firebase for database and user authentication.
+                Once logged in, a user can view their own notes, and have the option of creating, deleting and editing their notes.
+                App also supports filtering notes by category and bulk delete functionality."
+                tech="React, JavaScript, Firebase, HTML, CSS"
+                /></a>
 
                 <Card 
                 title="Recipe Search App"
