@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.e4e0719e.chunk.css",
+    "main.js": "/portfolio-website/static/js/main.df4d1b04.chunk.js",
+    "main.js.map": "/portfolio-website/static/js/main.df4d1b04.chunk.js.map",
+    "runtime-main.js": "/portfolio-website/static/js/runtime-main.28acd618.js",
+    "runtime-main.js.map": "/portfolio-website/static/js/runtime-main.28acd618.js.map",
+    "static/js/2.b7425ec2.chunk.js": "/portfolio-website/static/js/2.b7425ec2.chunk.js",
+    "static/js/2.b7425ec2.chunk.js.map": "/portfolio-website/static/js/2.b7425ec2.chunk.js.map",
+    "index.html": "/portfolio-website/index.html",
+    "static/css/main.e4e0719e.chunk.css.map": "/portfolio-website/static/css/main.e4e0719e.chunk.css.map",
+    "static/js/2.b7425ec2.chunk.js.LICENSE.txt": "/portfolio-website/static/js/2.b7425ec2.chunk.js.LICENSE.txt",
+    "static/media/facebook-clone.6c59f89e.jpg": "/portfolio-website/static/media/facebook-clone.6c59f89e.jpg",
+    "static/media/memo.d8983ef5.jpg": "/portfolio-website/static/media/memo.d8983ef5.jpg",
+    "static/media/profilepic.91cb4935.jpg": "/portfolio-website/static/media/profilepic.91cb4935.jpg",
+    "static/media/recipe-search.c407569a.jpg": "/portfolio-website/static/media/recipe-search.c407569a.jpg",
+    "static/media/spelling-game.500348b7.jpg": "/portfolio-website/static/media/spelling-game.500348b7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28acd618.js",
+    "static/js/2.b7425ec2.chunk.js",
+    "static/css/main.e4e0719e.chunk.css",
+    "static/js/main.df4d1b04.chunk.js"
+  ]
+}
